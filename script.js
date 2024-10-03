@@ -4,9 +4,10 @@ const Mostrarmenu = (headerToggle, navbarId) => {
   const toggleBtn = document.getElementById(headerToggle);
   // Selecciona el elemento del menú usando su ID
   const nav = document.getElementById(navbarId);
-  
+
   // Verifica que ambos parámetros estén definidos
-  if (toggleBtn && nav) { // Cambié headerToggle y navbarId por toggleBtn y nav
+  if (toggleBtn && nav) {
+    // Cambié headerToggle y navbarId por toggleBtn y nav
     // Añade un evento de clic al botón de alternancia
     toggleBtn.addEventListener("click", () => {
       // Alterna la clase 'show-menu' en el menú para mostrar/ocultar
@@ -57,11 +58,11 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function (event) {
       event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
       const sectionId = this.getAttribute("href");
-      const targetSection = sectionId === "#section2" ? libraryContent : mainContent;
-      
+      const targetSection =
+        sectionId === "#section2" ? libraryContent : mainContent;
+
       // Mostrar la sección objetivo
       showSection(targetSection);
     });
   });
 });
-
