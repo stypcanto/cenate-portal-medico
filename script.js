@@ -41,12 +41,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const mainContent = document.getElementById("main-content");
   // Selecciona el contenido de la biblioteca usando su ID
   const libraryContent = document.getElementById("library-content");
+  // Selecciona el contenido de la biblioteca usando su ID
+  const librarytadContent = document.getElementById("librarytad-content");
 
   // Función para mostrar la sección objetivo
   function showSection(targetSection) {
     // Ocultar ambas secciones
     mainContent.style.display = "none";
     libraryContent.style.display = "none";
+    librarytadContent.style.display = "none";
 
     // Mostrar la sección objetivo
     targetSection.style.display = "block";
@@ -58,8 +61,15 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function (event) {
       event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
       const sectionId = this.getAttribute("href");
-      const targetSection =
-        sectionId === "#section2" ? libraryContent : mainContent;
+
+      let targetSection;
+      if (sectionId === "#section2") {
+        targetSection = libraryContent;
+      } else if (sectionId === "#section3") {
+        targetSection = librarytadContent; // Mostrar la sección de LibraryTAD
+      } else {
+        targetSection = mainContent; // Por defecto, muestra el contenido principal
+      }
 
       // Mostrar la sección objetivo
       showSection(targetSection);
