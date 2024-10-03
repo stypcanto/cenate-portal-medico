@@ -3,7 +3,7 @@
   --header-height: 4.5rem;
   --nav-width: 300px;
   /*Colores*/
-  --first-color: #33165f;
+
   --first-color: #7fb6d4;
   --white: white;
   --first-color-light: #cecdcd;
@@ -414,7 +414,6 @@ img {
   }
   .header {
     padding: 0 3rem 0 6rem;
-    
   }
   .header__container {
     height: calc(var(--header-height) + 0.5rem);
@@ -468,82 +467,93 @@ img {
     opacity: 1;
   }
 
-
   .main-panel {
     width: 100%;
     padding: 20px;
     text-align: center;
-    background-color: transparent; 
-}
+    background-color: transparent;
+  }
 
-.main-panel__title {
+  .main-panel__title {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #333; 
-}
+    color: #333;
+  }
 
-.main-panel__content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
+  .main-panel__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
-.card {
-  width: 240px;
-  height: 150px;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  flex: 0 0 23%; 
-}
+  .card {
+    width: 240px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    flex: 0 0 23%;
+  }
 
-.card:hover {
-    transform: scale(1.05); 
-    background-color: #f5f5f5; 
-}
+  .card:hover {
+    transform: scale(1.05);
+    background-color: #f5f5f5;
+  }
 
-.card i {
+  .card i {
     font-size: 40px;
     margin-bottom: 10px;
-}
+  }
 
-.card span {
-    font-size: 16px; 
-}
-.main-panel {
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  background-color: transparent; 
-}
+  .card span {
+    font-size: 16px;
+  }
+  .main-panel {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent;
+  }
 
-.main-panel__title {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333; 
-}
+  .main-panel__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
 
-.main-panel__content {
-  display: flex;
-  justify-content: space-evenly; 
-  flex-wrap: wrap;
-  gap: 20px; 
-}
+  .main-panel__content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-.flex-break {
-  flex-basis: 100%; 
-  height: 0; 
-}
+  .flex-break {
+    flex-basis: 100%;
+    height: 0;
+  }
 
+  .nav__dropdown-item {
+    position: relative; /* Necesario para el posicionamiento absoluto del submenu */
+  }
 
+  .sub-menu {
+    display: none;
+  }
 
+  .sub-menu.show-submenu {
+    display: block; /* O usa flex o grid según tu diseño */
+  }
 
+  .show {
+    display: block; /* o flex, según tu diseño */
+  }
 }

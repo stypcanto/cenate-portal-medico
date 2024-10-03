@@ -9,6 +9,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+
+    <meta name="description" content="Descripción de la página para SEO" />
+    <meta property="og:title" content="Título para redes sociales" />
+    <meta property="og:description" content="Descripción para redes sociales" />
+    <meta property="og:image" content="URL de la imagen para redes sociales" />
   </head>
   <body>
     <!--HEADER-->
@@ -66,7 +71,9 @@
               <h3 class="nav__subtitle_menu">Menú</h3>
 
               <div class="nav__dropdown">
-                <a href="#" class="nav__link">
+                <a href="#main-content" class="nav__link">
+                  <!--Por defecto cuando se pulsa sobre Informacion General mostrar la pagina de Panel Principal TC TM y TO, por ahora estara asi luego se cambiara-->
+
                   <i class="bx bx-sitemap nav__icon"></i>
                   <span class="nav__name">Información General</span>
                   <i
@@ -75,15 +82,44 @@
                 </a>
                 <div class="nav__dropdown-collapse">
                   <div class="nav__dropdown-content">
-                    <a href="#section1" class="nav__dropdown-item"
+                    <a href="#main-content" class="nav__dropdown-item"
                       >Panel Principal TC TM TO</a
                     >
-                    <a href="#section3" class="nav__dropdown-item"
+                    <a href="#librarytad-content" class="nav__dropdown-item"
                       >Panel Principal TAD</a
                     >
-                    <a href="#section2" class="nav__dropdown-item"
-                      >Biblioteca Médica</a
-                    >
+                    <div class="nav__dropdown-item dropdown">
+                      <span class="dropdown-toggle">Biblioteca Médica</span>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="#subsection1" class="nav__dropdown-item"
+                            >Recursos en Medicina</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#subsection2" class="nav__dropdown-item"
+                            >Cardiología</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#subsection3" class="nav__dropdown-item"
+                            >Endocrinología</a
+                          >
+                        </li>
+
+                        <li>
+                          <a href="#subsection4" class="nav__dropdown-item"
+                            >Reumatología</a
+                          >
+                        </li>
+
+                        <li>
+                          <a href="#subsection5" class="nav__dropdown-item"
+                            >Urología</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -305,87 +341,6 @@
         </div>
       </div>
 
-      <div class="main-panel" id="library-content" style="display: none">
-        <h1 class="main-panel__title">Biblioteca Médica</h1>
-        <div class="main-panel__content">
-          <!-- Aquí van los botones de la biblioteca -->
-
-          <div
-            class="card"
-            onclick="window.open('https://medlineplus.gov', '_blank');"
-          >
-            <span>MEDLINE PLUS</span>
-          </div>
-
-          <div
-            class="card"
-            onclick="window.open('https://www.cdc.gov/index.html', '_blank');"
-          >
-            <span>NATIONAL INSTITUTES OF HEALTH</span>
-          </div>
-
-          <div class="card" onclick="window.open('https://nih.gov', '_blank');">
-            <span>NATIONAL HEALT LUNG</span>
-          </div>
-
-          <div
-            class="card"
-            onclick="window.open('https://www.cochranelibrary.com/', '_blank');"
-          >
-            <span>COCHRANE LIBRARY</span>
-          </div>
-
-          <div
-            class="card"
-            onclick="window.open('https://ietsi.essalud.gob.pe/wp-content/uploads/2018/06/GPC-OA_Version-extensa.pdf', '_blank');"
-          >
-            <span
-              >GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO Y MANEJO DE
-              PACIENTES CON OSTEOARTRITIS VERSIÓN EXTENSA</span
-            >
-          </div>
-
-          <div
-            class="card"
-            onclick="window.open('https://www.essalud.gob.pe/ietsi/pdfs/guias/GPC_Osteoartritis_v_corta.pdf ', '_blank');"
-          >
-            <span
-              >GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO Y MANEJO DE
-              PACIENTES CON OSTEOARTRITIS VERSIÓN CORTA</span
-            >
-          </div>
-
-          <div
-            class="card"
-            onclick="window.open('https://cdn.www.gob.pe/uploads/document/file/2661695/RD%20267-GPC%20DXyTTO%20OSTEOPOROSIS.pdf', '_blank');"
-          >
-            <span
-              >GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO Y TRATAMIENTO DE
-              OSTEOPOROSIS
-            </span>
-          </div>
-
-          <div
-            class="card"
-            onclick="window.open('https://ietsi.essalud.gob.pe/wp-content/uploads/2019/12/GPC-AR_V.-Ext-Anexos.pdf ', '_blank');"
-          >
-            <span
-              >GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO Y MANEJO INICIAL DE
-              ARTRITIS REUMATOIDE
-            </span>
-          </div>
-
-          <div
-            class="card"
-            onclick="window.open('https://www.ser.es/wp-content/uploads/2020/07/Guia-de-Practica-Clinica-para-el-Manejo-de-Pacientes-con-Gota-1.pdf', '_blank');"
-          >
-            <span
-              >GUÍA DE PRÁCTICA CLÍNICA PARA EL MANEJO DE PACIENTES CON GOTA
-            </span>
-          </div>
-        </div>
-      </div>
-
       <div class="main-panel" id="librarytad-content" style="display: none">
         <h1 class="main-panel__title">PANEL PRINCIPAL TAD</h1>
         <div class="main-panel__content">
@@ -473,6 +428,71 @@
               ><br />
               Estadísticas de Producción</span
             >
+          </div>
+        </div>
+      </div>
+
+      <!--SUBSECTION 1-->
+      <div class="main-panel" id="subsection1" style="display: none">
+        <h1 class="main-panel__title">Recursos en Medicina</h1>
+        <div class="main-panel__content">
+          <div
+            class="card"
+            onclick="window.open('https://medlineplus.gov', '_blank');"
+          >
+            <span>MEDLINE PLUS</span>
+          </div>
+        </div>
+      </div>
+
+      <!--SUBSECTION 2-->
+      <div class="main-panel" id="subsection2" style="display: none">
+        <h1 class="main-panel__title">Cardiología</h1>
+        <div class="main-panel__content">
+          <div
+            class="card"
+            onclick="window.open('https://medlineplus.gov', '_blank');"
+          >
+            <span>MEDLINE PLUS</span>
+          </div>
+        </div>
+      </div>
+
+      <!--SUBSECTION 3-->
+      <div class="main-panel" id="subsection3" style="display: none">
+        <h1 class="main-panel__title">Endocrinología</h1>
+        <div class="main-panel__content">
+          <div
+            class="card"
+            onclick="window.open('https://medlineplus.gov', '_blank');"
+          >
+            <span>MEDLINE PLUS</span>
+          </div>
+        </div>
+      </div>
+
+      <!--SUBSECTION 4-->
+      <div class="main-panel" id="subsection4" style="display: none">
+        <h1 class="main-panel__title">Reumatología</h1>
+        <div class="main-panel__content">
+          <div
+            class="card"
+            onclick="window.open('https://medlineplus.gov', '_blank');"
+          >
+            <span>MEDLINE PLUS</span>
+          </div>
+        </div>
+      </div>
+
+      <!--SUBSECTION 5-->
+      <div class="main-panel" id="subsection5" style="display: none">
+        <h1 class="main-panel__title">Urología</h1>
+        <div class="main-panel__content">
+          <div
+            class="card"
+            onclick="window.open('https://medlineplus.gov', '_blank');"
+          >
+            <span>MEDLINE PLUS</span>
           </div>
         </div>
       </div>
