@@ -1,0 +1,3 @@
+[submodule "cenate-portal-medico"]
+	path = cenate-portal-medico
+	url = git@github.com:stypcanto/cenate-portal-medico.git
