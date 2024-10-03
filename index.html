@@ -1,0 +1,253 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Web CENATE</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <div class="header__container">
+        <img
+          src="./assets/img/Web Development Logo.png"
+          class="header__img__rectangle"
+        />
+        <div class="header__toggle">
+          <i class="bx bx-menu" id="header-toggle"></i>
+        </div>
+      </div>
+    </header>
+    <!--NAV-->
+    <div class="nav" id="navbar">
+      <nav class="nav__container">
+        <div>
+          <a href="#" class="nav__link nav__logo">
+            <span class="nav__logo-name"> Portal de información </span>
+          </a>
+          <div class="nav__list">
+            <!-- PERFIL DE USUARIO QUE POR AHORA NO SE USARÁ
+            <div class="nav__items">
+              <h1 class="nav__subtitle">Profile</h1>
+              <a href="#" class="nav__link active">
+                <i class="bx bx-home nav__icon"></i>
+                <span class="nav__name">Inicio</span>
+              </a>
+              <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="bx bx-user nav__icon"></i>
+                  <span class="nav__name">Perfil</span>
+                  <i
+                    class="bx bx-chevron-down nav__icon nav__dropdown-icon"
+                  ></i>
+                </a>
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a href="#" class="nav__dropdown-item">Contraseñas</a>
+                    <a href="#" class="nav__dropdown-item">Correo</a>
+                    <a href="#" class="nav__dropdown-item">Cuentas</a>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="nav__link">
+                <i class="bx bx-mail-send nav__icon"></i>
+                <span class="nav__name">Correos</span>
+              </a>
+            </div>
+
+      -->
+
+            <div class="nav__items">
+              <h3 class="nav__subtitle_menu">Menú</h3>
+
+              <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="bx bx-sitemap nav__icon"></i>
+                  <span class="nav__name">Información General</span>
+                  <i
+                    class="bx bx-chevron-down nav__icon nav__dropdown-icon"
+                  ></i>
+                </a>
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a href="#section1" class="nav__dropdown-item"
+                      >Links importantes de acceso</a
+                    >
+                    <a href="#section2" class="nav__dropdown-item"
+                      >Biblioteca</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- PERFIL DE MENUS QUE POR AHORA NO SE USARÁ
+              <a href="#" class="nav__link">
+                <i class="bx bx-analyse nav__icon"></i>
+                <span class="nav__name">Estadística</span>
+              </a>
+              <a href="#" class="nav__link">
+                <i class="bx bx-heart nav__icon"></i>
+                <span class="nav__name">Indicadores</span>
+              </a>
+
+              <a href="#" class="nav__link">
+                <i class="bx bx-briefcase nav__icon"></i>
+                <span class="nav__name">Normas legales</span>
+              </a>
+
+              <a href="#" class="nav__link">
+                <i class="bx bx-star nav__icon"></i>
+                <span class="nav__name">Mapa de procesos</span>
+              </a>
+              <a href="#" class="nav__link">
+                <i class="bx bx-sitemap nav__icon"></i>
+                <span class="nav__name">Organigrama</span>
+              </a>
+              <a href="#" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>
+                <span class="nav__name">Directorio de personal</span>
+              </a>
+              <a href="#" class="nav__link">
+                <i class="bx bx-analyse nav__icon"></i>
+                <span class="nav__name">Reuniones</span>
+              </a>
+
+ -->
+            </div>
+          </div>
+        </div>
+        <a href="#" class="nav__link nav__logout">
+          <i class="bx bx-log-out nav__icon"></i>
+          <span class="nav__name">Cerrar sesión</span>
+        </a>
+      </nav>
+    </div>
+
+    <!--CONTENIDO-->
+    <main>
+      <div class="main-panel" id="main-content">
+        <h1 class="main-panel__title">PANEL PRINCIPAL</h1>
+        <div class="main-panel__content">
+          <div
+            class="card"
+            onclick="window.open('https://docs.google.com/spreadsheets/d/1xYQfmu70tIV5QhhDEPDs26nC8GSRW6H9sPsgXMS6pW8/edit?usp=sharing', '_blank');"
+          >
+            <img
+              src="./assets/img/icon-Lineamientos.png"
+              alt="Lineamientos Básicos"
+              class="card-img"
+            />
+            <span>Información de las IPRESS</span>
+          </div>
+
+          <div
+            class="card"
+            onclick="window.open('http://10.56.1.158/sgss/servlet/hmain', '_blank');"
+          >
+            <img
+              src="./assets/img/icon-health.png"
+              alt="Speech Atención "
+              class="card-img"
+              style="width: 80px; height: auto"
+            />
+            <span>ESSI</span>
+          </div>
+          <div
+            class="card"
+            onclick="window.open('https://docs.google.com/spreadsheets/d/1WQkIkynqljJ3pRfjZVGJ-fPVS-0YuLvqO5_X3ojhwBI/edit?resourcekey=&gid=446068656#gid=446068656', '_blank');"
+          >
+            <img
+              src="./assets/img/icon-Imagenes.png"
+              alt="Imagenes - Teleconsulta"
+              class="card-img"
+            />
+            <span>Imagenes - Teleconsulta</span>
+          </div>
+
+          <!-- 
+              <div class="card" onclick="window.location.href='#';">
+                <img src="./assets/img/icon-Teleconsultoria.png" alt="Teleconsulta" class="card-img">
+                  <span>Teleconsultoria</span>
+              </div>
+              -->
+          <div class="flex-break"></div>
+          <div
+            class="card"
+            onclick="window.open('http://10.0.89.139:8089/telemedicina/', '_blank');"
+          >
+            <img
+              src="./assets/img/icon-MesaAyuda.png"
+              alt="Mesa de Ayuda"
+              class="card-img"
+            />
+            <span>Mesa de Ayuda</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-panel" id="library-content" style="display: none">
+        <h1 class="main-panel__title">Biblioteca</h1>
+        <div class="main-panel__content">
+          <!-- Aquí van los botones de la biblioteca -->
+          <div
+            class="card"
+            onclick="window.open('https://ietsi.essalud.gob.pe/wp-content/uploads/2018/06/GPC-OA_Version-extensa.pdf', '_blank');"
+          >
+            <span
+              >GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO Y MANEJO DE
+              PACIENTES CON OSTEOARTRITIS VERSIÓN EXTENSA</span
+            >
+          </div>
+
+          <div
+            class="card"
+            onclick="window.open('https://www.essalud.gob.pe/ietsi/pdfs/guias/GPC_Osteoartritis_v_corta.pdf ', '_blank');"
+          >
+            <span
+              >GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO Y MANEJO DE
+              PACIENTES CON OSTEOARTRITIS VERSIÓN CORTA</span
+            >
+          </div>
+
+          <div
+            class="card"
+            onclick="window.open('https://cdn.www.gob.pe/uploads/document/file/2661695/RD%20267-GPC%20DXyTTO%20OSTEOPOROSIS.pdf', '_blank');"
+          >
+            <span
+              >GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO Y TRATAMIENTO DE
+              OSTEOPOROSIS
+            </span>
+          </div>
+
+          <div class="flex-break"></div>
+
+          <div
+            class="card"
+            onclick="window.open('https://ietsi.essalud.gob.pe/wp-content/uploads/2019/12/GPC-AR_V.-Ext-Anexos.pdf ', '_blank');"
+          >
+            <span
+              >GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO Y MANEJO INICIAL DE
+              ARTRITIS REUMATOIDE
+            </span>
+          </div>
+
+          <div
+            class="card"
+            onclick="window.open('https://www.ser.es/wp-content/uploads/2020/07/Guia-de-Practica-Clinica-para-el-Manejo-de-Pacientes-con-Gota-1.pdf', '_blank');"
+          >
+            <span
+              >GUÍA DE PRÁCTICA CLÍNICA PARA EL MANEJO DE PACIENTES CON GOTA
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
