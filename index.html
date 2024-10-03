@@ -76,10 +76,10 @@
                 <div class="nav__dropdown-collapse">
                   <div class="nav__dropdown-content">
                     <a href="#section1" class="nav__dropdown-item"
-                      >Links importantes de acceso</a
+                      >Panel Principal</a
                     >
                     <a href="#section2" class="nav__dropdown-item"
-                      >Biblioteca</a
+                      >Biblioteca Médica</a
                     >
                   </div>
                 </div>
@@ -135,6 +135,18 @@
         <div class="main-panel__content">
           <div
             class="card"
+            onclick="window.open('http://10.56.1.158/sgss/servlet/hmain', '_blank');"
+          >
+            <img
+              src="./assets/img/icon-health.png"
+              alt="Speech Atención "
+              class="card-img"
+              style="width: 80px; height: auto"
+            />
+            <span>ESSI</span>
+          </div>
+          <div
+            class="card"
             onclick="window.open('https://docs.google.com/spreadsheets/d/1xYQfmu70tIV5QhhDEPDs26nC8GSRW6H9sPsgXMS6pW8/edit?usp=sharing', '_blank');"
           >
             <img
@@ -147,16 +159,16 @@
 
           <div
             class="card"
-            onclick="window.open('http://10.56.1.158/sgss/servlet/hmain', '_blank');"
+            onclick="window.open('http://10.0.89.139:8089/telemedicina/', '_blank');"
           >
             <img
-              src="./assets/img/icon-health.png"
-              alt="Speech Atención "
+              src="./assets/img/icon-MesaAyuda.png"
+              alt="Mesa de Ayuda"
               class="card-img"
-              style="width: 80px; height: auto"
             />
-            <span>ESSI</span>
+            <span>Mesa de Ayuda</span>
           </div>
+
           <div
             class="card"
             onclick="window.open('https://docs.google.com/spreadsheets/d/1WQkIkynqljJ3pRfjZVGJ-fPVS-0YuLvqO5_X3ojhwBI/edit?resourcekey=&gid=446068656#gid=446068656', '_blank');"
@@ -179,16 +191,13 @@
 
           -->
 
-          <div
-            class="card"
-            onclick="window.open('http://10.0.89.139:8089/telemedicina/', '_blank');"
-          >
+          <div class="card" onclick="window.open('#', '_blank');">
             <img
-              src="./assets/img/icon-MesaAyuda.png"
-              alt="Mesa de Ayuda"
+              src="./assets/img/icon-Imagenes.png"
+              alt="Imagenes - Teleconsulta"
               class="card-img"
             />
-            <span>Mesa de Ayuda</span>
+            <span>Protocolo de contacto y atención</span>
           </div>
 
           <div
@@ -210,7 +219,7 @@
       </div>
 
       <div class="main-panel" id="library-content" style="display: none">
-        <h1 class="main-panel__title">Biblioteca</h1>
+        <h1 class="main-panel__title">Biblioteca Médica</h1>
         <div class="main-panel__content">
           <!-- Aquí van los botones de la biblioteca -->
 
