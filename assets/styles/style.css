@@ -591,3 +591,54 @@ img {
     display: block; /* o flex, según tu diseño */
   }
 }
+
+
+
+
+
+/* Estilo para el contenedor de la tarjeta */
+.card {
+  position: relative; /* Necesario para posicionar el cuadro "Nuevo" */
+  overflow: hidden; /* Asegura que cualquier elemento que sobresalga quede oculto */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el cuadro "Nuevo" */
+.new-badge {
+  position: absolute;
+  top: 10px;  /* Posición desde la parte superior */
+  right: 10px; /* Posición desde la parte derecha */
+  background-color: #ff6b6b; /* Color de fondo suave para el cuadro de "Nuevo" */
+  color: white; /* Color de texto blanco */
+  padding: 5px 15px;
+  font-size: 12px; /* Tamaño de fuente moderado */
+  font-weight: bold;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  z-index: 10; /* Asegura que el "Nuevo" esté por encima de otros elementos */
+  opacity: 0; /* Inicialmente invisible */
+  transform: translateX(50px); /* Inicia desde fuera del contenedor */
+  animation: slideInBounce 1.2s ease-out forwards; /* Animación de deslizamiento y rebote */
+}
+
+/* Animación de deslizamiento y rebote suave */
+@keyframes slideInBounce {
+  0% {
+    transform: translateX(50px); /* Comienza fuera del contenedor, desde la derecha */
+    opacity: 0; /* Invisible */
+  }
+  50% {
+    transform: translateX(-10px); /* Se desplaza ligeramente hacia la izquierda (rebote inicial) */
+    opacity: 1; /* Se vuelve visible */
+  }
+  75% {
+    transform: translateX(5px); /* Ligeramente a la derecha para crear un efecto de rebote */
+  }
+  100% {
+    transform: translateX(0); /* Se detiene en su posición final */
+    opacity: 1; /* Se mantiene visible */
+  }
+}
+
