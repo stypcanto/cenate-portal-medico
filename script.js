@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("subsection6"),
     document.getElementById("subsection7"),
     document.getElementById("subsection8"),
+    document.getElementById("subsection9"),
   ];
 
   function showSection(targetSection) {
